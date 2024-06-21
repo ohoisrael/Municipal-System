@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Table } from "flowbite-react";
+import { Table, TableBody, TableCell, TableHead, TableHeadCell, TableRow } from "flowbite-react";
 
 function Payments() {
   const [payments, setPayments] = useState([]);
