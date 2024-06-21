@@ -31,10 +31,10 @@ function Payments() {
           </TableHead>     
         <TableBody className="divide-y">
           {payments.map((payment) => (
-            <TableRow key={payment._id} className="text-center">
+            <TableRow key={payment._id} className="bg-white dark:border-gray-700 dark:bg-gray-800">
               <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{payment.userId && payment.userId.username ? payment.userId.username : currentUser.username || 'Unknown'}</TableCell>
-              <TableCell className="px-4 py-2 border-b">{payment.amount}</TableCell>
-              <TableCell className="px-4 py-2 border-b">{new Date(payment.paymentDate).toLocaleDateString()}</TableCell>
+              <TableCell>{payment.amount}</TableCell>
+              <TableCell>{new Date(payment.paymentDate).toLocaleDateString()}</TableCell>
               </TableRow>
             
           ))}
