@@ -1,0 +1,1 @@
+This is a Municipal Management System for handling complaints by resident, getting news and paying property rate which is all managed by the admin, for the frontend it is built with React, Redux for State Management and Tailwind CSS whlist the Backend is built with NodeJs, Express Server and MongoDb
